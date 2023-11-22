@@ -22,9 +22,11 @@ def convert_image_to_pdf(image):
 
     return pdf_data.getvalue()
 
+
 @app.route('/')
 def index():
     return render_template('index.html')
+
 
 @app.route('/upload', methods=['POST'])
 def upload():
